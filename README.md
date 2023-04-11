@@ -2,14 +2,14 @@
 
 ## Equipe e Definição de Papéis
 
-| Membro          | Papel                   | E-mail                            |
-| --------------- | ----------------------- | --------------------------------- |
-| Taciano         | Cliente Professor       | taciano@bsi.ufrn.br               |
-| Jonathan Tauan  | Gestão, Desenvolvedor   | jonathan.maia.133@ufrn.edu.br     |
-| Guilherme Costa | Analista, Testador      | guilherme.costa.134@ufrn.edu.br   |
-| João Vitor      | Desenvolvedor, Gerente  | joao.vitor.dantas.085@ufrn.edu.br |
-| Rusdrael Antony | Desenvolvedor, Testador | antony.freire.086@ufrn.edu.br     |
-| José Victor     | Desenvolvedor, Analista | jose.victor@ufrn.edu.br           |
+| Membro          | Papel                   | E-mail                            |GitHub               |
+| --------------- | ----------------------- | --------------------------------- |---------------------|
+| Taciano         | Cliente Professor       | taciano@bsi.ufrn.br               |tacianosilva         |
+| Jonathan Tauan  | Analista, Desenvolvedor | jonathan.maia.133@ufrn.edu.br     |jtauanpm             |
+| Guilherme Costa | Analista, Testador      | guilherme.costa.134@ufrn.edu.br   |guilhermecostam      |
+| João Vitor      | Desenvolvedor, Gerente  | joao.vitor.dantas.085@ufrn.edu.br |JoaoVitorGomesDantas |
+| Rusdrael Antony | Desenvolvedor, Testador | antony.freire.086@ufrn.edu.br     |rusdrael             |
+| José Victor     | Desenvolvedor, Analista | jose.victor@ufrn.edu.br           |victormedeiros1      |
 
 ### Matriz de Competências
 
