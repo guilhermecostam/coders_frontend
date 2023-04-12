@@ -1,4 +1,6 @@
-# Coders Front-end - documento de visão
+# Coders Front-end
+
+Repositório para a Disciplina Engenharia de Software II.
 
 ## Equipe e Definição de Papéis
 
