@@ -61,6 +61,7 @@ O código que gera o diagrama está [Aqui!](yuml/monitoria-yuml.md). O detalhame
 | ----------------------------------------- | ------------------------------------------------ |
 | RNF001 - Deve ser acessível via navegador | Deve funcionar nos navegadores mais atuais       |
 | RNF002 - Consultas devem ser eficientes   | O sistema deve executar as consultas rapidamente |
+| RNF003 - O servidor deve suportar         | O sistema deve comportar certa quantidade de pessoas simultaneamente |
 
 ## Riscos
 
