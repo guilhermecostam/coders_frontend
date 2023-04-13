@@ -1,15 +1,17 @@
-# documento de visão
+# Coders Front-end
+
+Repositório para a Disciplina Engenharia de Software II.
 
 ## Equipe e Definição de Papéis
 
-| Membro          | Papel                   | E-mail                            |
-| --------------- | ----------------------- | --------------------------------- |
-| Taciano         | Cliente Professor       | taciano@bsi.ufrn.br               |
-| Jonathan Tauan  | Gestão, Desenvolvedor   | jonathan.maia.133@ufrn.edu.br     |
-| Guilherme Costa | Analista, Testador      | guilherme.costa.134@ufrn.edu.br   |
-| João Vitor      | Desenvolvedor, Gerente  | joao.vitor.dantas.085@ufrn.edu.br |
-| Rusdrael Antony | Desenvolvedor, Testador | antony.freire.086@ufrn.edu.br     |
-| José Victor     | Desenvolvedor, Analista | jose.victor@ufrn.edu.br           |
+| Membro          | Papel                   | E-mail                            | GitHub               |
+| --------------- | ----------------------- | --------------------------------- | -------------------- |
+| Taciano         | Cliente Professor       | taciano@bsi.ufrn.br               | tacianosilva         |
+| Jonathan Tauan  | Analista, Desenvolvedor | jonathan.maia.133@ufrn.edu.br     | jtauanpm             |
+| Guilherme Costa | Analista, Testador      | guilherme.costa.134@ufrn.edu.br   | guilhermecostam      |
+| João Vitor      | Desenvolvedor, Gerente  | joao.vitor.dantas.085@ufrn.edu.br | JoaoVitorGomesDantas |
+| Rusdrael Antony | Desenvolvedor, Testador | antony.freire.086@ufrn.edu.br     | rusdrael             |
+| José Victor     | Desenvolvedor, Analista | jose.victor@ufrn.edu.br           | victormedeiros1      |
 
 ### Matriz de Competências
 
@@ -17,7 +19,7 @@
 | --------------- | ----------------------------------------------------- |
 | Jonathan Tauan  | Desenvolvedor, Gestão .NET, SQL, Angular, C#          |
 | Guilherme Costa | Desenvolvedor, Testador Python, C#, PHP, Laravel      |
-| João Vitor      | Desenvolvedor HTML, CSS, JavaScript, C, Python        |
+| João Vitor      | Desenvolvedor, HTML, CSS, JavaScript, C, Python       |
 | Rusdrael Antony | Desenvolvedor, Testador Python, JavaScript, C#        |
 | José Victor     | Desenvolvedor, Analista, HTML, CSS, JavaScript, React |
 
@@ -35,15 +37,25 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 
 ## Lista de Requisitos Funcionais
 
-| Requisito                                           | Descrição                                                                                                                                                                                                                     | Ator                   |
-| --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
-| RF001 - Manter um cadastro de Centros               | Um centro representa uma unidade administrativa da Universidade. Um centro tem código, nome, sigla, endereço e site.                                                                                                          | Administrador          |
-| RF002 - Manter um cadastro de Departamentos         | Um departamento tem código, nome, sigla, endereço e o centro a qual pertence.                                                                                                                                                 | Administrador          |
-| RF003 - Manter o cadastro de Salas                  | Uma sala tem um número, um nome, capacidade, tamanho, bloco e o centro a qual pertence.                                                                                                                                       | Administrador          |
-| RF004 - Manter cadastro de Componentes Curriculares | Um componente curricular é de um tipo de componente. Um componente curricular tem: código, nome, ementa, departamento, carga horária e modalidade, equivalências e requisitos com outros componentes, data de criação.        | Administrador          |
-| RF005 - Manter o cadastro de Horários de Aula       | Um horário tem: um dia de semana, um turno, uma ordem (ordenação/identificador), uma hora de início, uma hora de final                                                                                                        | Administrador          |
-| RF006 - Manter o cadastro de professores            | um professor tem: matrícula, nome, e-mail, telefone e o departamento                                                                                                                                                          | Administrador          |
-| RF007 - Manter cadastro de Turmas                   | Uma turma tem: código, professor, sala e horários (horário da turma). Uma turma é de um componente curricular. Uma turma tem um ou mais professores. Uma turma tem uma ou mais salas. Uma turma tem vários horários de aulas. | Chefes e Coordenadores |
+| Requisito                                | Descrição                                                                                                                                 | Ator    |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| RF001 - Criar usuário                    | O usuário pode criar uma conta na plataforma, para isso é necessário email e senha.                                                       | Usuário |
+| RF002 - Apagar usuário                   | O usuário pode excluir sua conta acessando as configurações da conta.                                                                     | Usuário |
+| RF003 - Acessar dados do usuário         | As informações do usuário podem ser solicitadas para serem exibidas na interface.                                                         | Usuário |
+| RF004 - Atualizar dados do usuário       | O usuário pode acessar as configurações da sua conta para fazer a atualização dos seus dados.                                             | Usuário |
+| RF005 - Abrir projeto                    | Um usuário pode criar um projeto para que outros possam se candidatar. Para um projeto ser criado é necessário ter nome e descrição.      | Usuário |
+| RF006 - Atualizar dados do projeto       | Elementos como nome, descrição, tecnologias e contribuintes podem ser modificados pelo dono do projeto ou outras pessoas com autorização. | Usuário |
+| RF007 - Acessar dados do projeto         | As informações do projeto podem ser solicitadas para serem exibidas na interface.                                                         | Usuário |
+| RF008 - Excluir projeto                  | Um projeto pode ser encerrado pelo usuário que o criou.                                                                                   | Usuário |
+| RF008 - Excluir projeto                  | Um projeto pode ser encerrado pelo usuário que o criou.                                                                                   | Usuário |
+| RF009 - Adicionar colaborador            | O dono do projeto ou pessoa com autorização pode aceitar usuários que querem participar do seu projeto.                                   | Usuário |
+| RF010 - Excluir colaborador              | O dono do projeto ou pessoa com autorização pode remover um usuário do projeto.                                                           | Usuário |
+| RF011 - Recusar colaborador              | O dono do projeto ou pessoa com autorização pode recusar um usuário candidato ao seu projeto.                                             | Usuário |
+| RF012 - Avaliar usuário                  | Quando acabar o projeto um usuário poderá avaliar um colaborador.                                                                         | Usuário |
+| RF013 - Conectar usuário com colaborador | Quando um colaborador entra em um projeto conectar ele com o usuário.                                                                     | Usuário |
+| RF014 - Adicionar tecnologia             | Quando um colaborador entra em um projeto conectar ele com o usuário.                                                                     | Usuário |
+| RF015 - Remover tecnologia               | O usuário pode remover uma tecnologia associada ao seu perfil.                                                                            | Usuário |
+| RF016 - Listar repositórios do usuário   | Listar os repositórios do usuários e linguagens que ele possui                                                                            | Usuário |
 
 ### Modelo Conceitual
 
@@ -57,10 +69,11 @@ O código que gera o diagrama está [Aqui!](yuml/monitoria-yuml.md). O detalhame
 
 ## Lista de Requisitos Não-Funcionais
 
-| Requisito                                 | Descrição                                        |
-| ----------------------------------------- | ------------------------------------------------ |
-| RNF001 - Deve ser acessível via navegador | Deve funcionar nos navegadores mais atuais       |
-| RNF002 - Consultas devem ser eficientes   | O sistema deve executar as consultas rapidamente |
+| Requisito                                 | Descrição                                                            |
+| ----------------------------------------- | -------------------------------------------------------------------- |
+| RNF001 - Deve ser acessível via navegador | Deve funcionar nos navegadores mais atuais                           |
+| RNF002 - Consultas devem ser eficientes   | O sistema deve executar as consultas rapidamente                     |
+| RNF003 - O servidor deve suportar         | O sistema deve comportar certa quantidade de pessoas simultaneamente |
 
 ## Riscos
 
