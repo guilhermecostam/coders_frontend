@@ -4,12 +4,6 @@
 
 Este documento descreve os User Stories criados a partir da Lista de Requisitos no [Documento 001 - Documento de Visão](docs/doc-visao.md). Modelo de documento baseado nas características do processo easYProcess (YP).
 
-## Histórico de revisões
-
-| Data       | Versão  | Descrição                                                                      | Autor           |
-| :--------- | :-----: | :----------------------------------------------------------------------------: | :-------------- |
-| ...        | ...     | ...                                                                            | ...             |
-
 ### User Story US01 - Manter Usuário
 
 |               |                                                                |
