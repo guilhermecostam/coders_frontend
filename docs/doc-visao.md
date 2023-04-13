@@ -47,7 +47,6 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 | RF006 - Atualizar dados do projeto       | Elementos como nome, descrição, tecnologias e contribuintes podem ser modificados pelo dono do projeto ou outras pessoas com autorização. | Usuário |
 | RF007 - Acessar dados do projeto         | As informações do projeto podem ser solicitadas para serem exibidas na interface.                                                         | Usuário |
 | RF008 - Excluir projeto                  | Um projeto pode ser encerrado pelo usuário que o criou.                                                                                   | Usuário |
-| RF008 - Excluir projeto                  | Um projeto pode ser encerrado pelo usuário que o criou.                                                                                   | Usuário |
 | RF009 - Adicionar colaborador            | O dono do projeto ou pessoa com autorização pode aceitar usuários que querem participar do seu projeto.                                   | Usuário |
 | RF010 - Excluir colaborador              | O dono do projeto ou pessoa com autorização pode remover um usuário do projeto.                                                           | Usuário |
 | RF011 - Recusar colaborador              | O dono do projeto ou pessoa com autorização pode recusar um usuário candidato ao seu projeto.                                             | Usuário |
@@ -59,11 +58,11 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 
 ### Modelo Conceitual
 
-Abaixo apresentamos o modelo conceitual usando o **YUML**.
+Abaixo apresentamos o modelo conceitual usando o **Mermaid**.
 
-![Modelo UML](yuml/monitoria-modelo.png)
+![Diagrama de classes](mermaid/classes-modelo.png)
 
-O código que gera o diagrama está [Aqui!](yuml/monitoria-yuml.md). O detalhamento dos modelos conceitual e de dados do projeto estão no [Documento de Modelos](doc-modelos.md).
+O código que gera o diagrama está [Aqui!](mermaid/classes-mermaid.md). O detalhamento dos modelos conceitual e de dados do projeto estão no [Documento de Modelos](doc-modelos.md).
 
 #### Descrição das Entidades
 
@@ -81,9 +80,7 @@ Preencher na tabela os riscos identificados para o início do projeto. Essa tabe
 
 | Data       | Risco                                                                 | Prioridade | Responsável | Status    | Providência/Solução                                                                     |
 | ---------- | --------------------------------------------------------------------- | ---------- | ----------- | --------- | --------------------------------------------------------------------------------------- |
-| 10/03/2018 | Não aprendizado das ferramentas utilizadas pelos componentes do grupo | Alta       | Todos       | Vigente   | Reforçar estudos sobre as ferramentas e aulas com a integrante que conhece a ferramenta |
-| 10/03/2018 | Ausência por qualquer motivo do cliente                               | Média      | Gerente     | Vigente   | Planejar o cronograma tendo em base a agenda do cliente                                 |
-| 10/03/2018 | Divisão de tarefas mal sucedida                                       | Baixa      | Gerente     | Vigente   | Acompanhar de perto o desenvolvimento de cada membro da equipe                          |
-| 10/03/2018 | Implementação de protótipo com as tecnologias                         | Alto       | Todos       | Resolvido | Encontrar tutorial com a maioria da tecnologia e implementar um caso base do sistema    |
-
-### Referências
+| 27/03/2023 | Não aprendizado das ferramentas utilizadas pelos componentes do grupo | Alta       | Todos       | Vigente   | Reforçar estudos sobre as ferramentas e aulas com a integrante que conhece a ferramenta |
+| 27/03/2023 | Ausência por qualquer motivo do cliente                               | Média      | Gerente     | Vigente   | Planejar o cronograma tendo em base a agenda do cliente                                 |
+| 27/03/2023 | Divisão de tarefas mal sucedida                                       | Baixa      | Gerente     | Vigente   | Acompanhar de perto o desenvolvimento de cada membro da equipe                          |
+| 27/03/2023 | Implementação de protótipo com as tecnologias                         | Alto       | Todos       | Resolvido | Encontrar tutorial com a maioria da tecnologia e implementar um caso base do sistema    |
