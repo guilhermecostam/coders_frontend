@@ -1,5 +1,7 @@
 # Coders
 
+## Descrição do Projeto
+
 O sistema a ser desenvolvido tem como objetivo fornecer uma plataforma para facilitar o encontro de estudantes e profissionais de tecnologia que buscam se aventurar em projetos reais, propostos por outros usuários, promovendo network e oportunidades para demonstrarem suas habilidades técnicas.
 
 * Modelo do [Plano de Iteração](docs/doc-iteracao.md)
