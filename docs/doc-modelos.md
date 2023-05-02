@@ -1,83 +1,28 @@
 # Documento de Modelos
 
-Neste documento temos o modelo Conceitual (UML). Temos também a descrição das entidades e o dicionário de dados.
+Neste documento temos o Modelo de Dados (Entidade-Relacionamento). Temos também a descrição das entidades e o dicionário de dados.
 
 ## Modelo Conceitual
 
-### Diagrama de Classes usando Mermaid
+### Modelo de Dados (Entidade-Relacionamento) usando Mermaid
 
 ```mermaid
-classDiagram
-    Usuario <|-- Projeto
-    Usuario <|-- Endereco
-    Projeto <|-- Colaborador
-
-class Usuario {
-    +Int id
-    +String nome
-    +Date data_nascimento
-    +String telefone
-    +String email
-    +String area_atuacao
-    +String linkedin
-    +String github
-    +Serial endereco
-    +Serial projeto
-
-    -createUser()
-    -deleteUser()
-    -updateUser()
-    -queryUser()
-}
-
-class Endereco {
-    +Int id
-    +String rua
-    +Int numero_residencia
-    +String bairro
-    +String cidade
-    +String estado
-    +String cep
-    +String complemento
-
-    -newAddress()
-    -updtaeAddress()
-    -queryAddress()
-}
-
-class Projeto {
-    +Int id
-    +String titulo
-    +String descricao
-    +String discord
-
-    -createNewProject()
-    -updateProject()
-    -acessProject()
-    -deleteProject()
-    -addCollaborator()
-}
-
-class Colaborador {
-    +Int id
-    +String name
-
-    -createColaborador()
-    -updateColaborador()
-    -listColaborador()
-}
+erDiagram
+    Usuario ||--|| Endereco : tem
+    Usuario }o--|{ UsuarioProjeto : pertence
+    Projeto }o--|{ UsuarioProjeto : pertence
 ```
 
 ### Descrição das Entidades
 
 Descrição sucinta das entidades presentes no sistema.
 
-| Entidade    | Descrição                                                                                                                                            |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Usuário     | Entidade abstrata para representar informações gerais dos Usuários: id, nome, data_nasc, telefone, email, área atuação, linkedin, github e endereço. |
-| Endereço    | Entidade que representa um Endereço tem as informações: id, rua, número, bairro, cidade, estado, cep, complemento.                                   |
-| Projeto     | Entidade que representa um Projeto tem as informações: id, título, tecnologia, descrição, discord e dono.                                            |
-| Colaborador | Entidade que representa uma Colaborador tem as informações: id, usuario e projeto.                                                                   |
+| Entidade       | Descrição                                                                                                                                            |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Usuário        | Entidade abstrata para representar informações gerais dos Usuários: id, nome, data_nasc, telefone, email, área atuação, linkedin, github e endereço. |
+| Endereço       | Entidade que representa um Endereço tem as informações: id, rua, número, bairro, cidade, estado, cep, complemento.                                   |
+| Projeto        | Entidade que representa um Projeto tem as informações: id, título, tecnologia, descrição, discord e dono.                                            |
+| UsuarioProjeto | Entidade que representa o relacionamento entre usuário e projeto tem as informações: id, tipo, usuario e projeto.                                    |
 
 ### Dicionário de Dados
 
@@ -133,13 +78,14 @@ Descrição sucinta das entidades presentes no sistema.
 
 <hr>
 
-|   Tabela   | Colaborador                                                       |
+|   Tabela   | UsuarioProjeto                                                    |
 | ---------- | ----------------------------------------------------------------- |
-| Descrição  | Armazena as informações de um colaborador.                        |
-| Observação | Colaboradores obrigatoriamente tem que fazer parte de um projeto. |
+| Descrição  | Armazena as informações do tipo de usuário do projeto.            |
+| Observação | ---                                                               |
 
 |  Nome         | Descrição                          | Tipo de Dado | Tamanho | Restrições de Domínio |
 | ------------- | ---------------------------------- | ------------ | ------- | --------------------- |
 | id            | identificador gerado pelo SGBD     | SERIAL       | ---     | PK / Identity         |
-| usuario       | usuário vinculado ao colaborador   | SERIAL       | ---     | FK / Not Null         |
-| projeto       | projeto vinculado ao colaborador   | SERIAL       | ---     | FK / Not Null         |
+| tipo          | tipo de usuário                    | INT          | ---     | Not Null              |
+| usuario       | usuário vinculado ao projeto       | SERIAL       | ---     | FK / Not Null         |
+| projeto       | projeto vinculado ao usuario       | SERIAL       | ---     | FK / Not Null         |
