@@ -33,3 +33,33 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | ------------------------ | ----------------------------------------- |
 | **Código**               | **Descrição**                             |
 | **TA01.01**              | ...                                       |
+
+### User Story US02 - Manter Projeto
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | O sistema deve manter um cadastro de projeto que pode ser criado após o usuário ter acesso à plataforma. Um projeto tem os atributos name, id, description, status, link_github, link_discord e creation_date. Além disso o usuário criador poderá alterar alguns dados do projeto, como o nome ou a descrição.  |
+
+| **Requisitos envolvidos** |                            |
+| ------------------------- | :------------------------- |
+| RF05                      | Abrir projeto              |
+| RF06                      | Atualizar dados do projeto |
+| RF07                      | Acessar dados do projeto   |
+| RF08                      | Excluir projeto            |
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 12 h                                | 
+| **Tempo Gasto (real):**   | ...                                 | 
+| **Tamanho Funcional**     | 7 PF                                | 
+| **Analista**              | Rusdrael Antony                     | 
+| **Desenvolvedor**         | Guilherme Costa                     | 
+| **Revisor**               | Jonathan Tauan                      | 
+| **Testador**              | João Vitor                          | 
+
+
+| Testes de Aceitação (TA) |                                           |
+| ------------------------ | ----------------------------------------- |
+| **Código**               | **Descrição**                             |
+| **TA01.01**              | ...                                       |
