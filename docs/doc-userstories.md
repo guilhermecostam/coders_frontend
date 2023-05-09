@@ -63,3 +63,32 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | ------------------------ | ----------------------------------------- |
 | **Código**               | **Descrição**                             |
 | **TA01.01**              | ...                                       |
+
+### User Story US03 - Manter Colaborador (UsuarioProjeto)
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| Descrição | O sistema deve manter um cadastro de colaborador para cada usuário vinculado a um projeto. Um registro da tabela UsuarioProjeto deverá ter os seguintes atributos: id, id_projeto, id_usuario. Além disso o usuário criador poderá alterar alguns dados do projeto, como o nome ou a descrição.  |
+
+| Requisitos envolvidos |                            |
+| ------------------------- | :------------------------- |
+| RF09                      | Adicionar colaborador      |
+| RF10                      | Excluir colaborador        |
+| RF11                      | Recusar colaborador        |
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| Prioridade            | Essencial                           | 
+| Estimativa            | 08 h                                | 
+| Tempo Gasto (real):   | ...                                 | 
+| Tamanho Funcional     | 5 PF                                | 
+| Analista              | Jonathan Tauan                      | 
+| Desenvolvedor         | Rusdrael Antony                     | 
+| Revisor               | João Vitor                          | 
+| Testador              | Guilherme Costa                     | 
+
+
+| Testes de Aceitação (TA) |                                           |
+| ------------------------ | ----------------------------------------- |
+| Código               | Descrição                             |
+| TA01.01              | ...                                       |
