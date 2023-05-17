@@ -36,6 +36,7 @@ Descrição sucinta das entidades presentes no sistema.
 | id            | identificador gerado pelo SGBD     | SERIAL       | ---     | PK / Identity         |
 | data_nasc     | data de nascimento do usuário      | DATE         | ---     | Not Null              |
 | nome          | nome do usuário                    | VARCHAR      | 150     | Not Null              |
+| senha         | senha do usuário                   | VARCHAR      | 150     | Not Null              |
 | telefone      | telefone do usuário                | VARCHAR      | 150     | Not Null              |
 | linkedin      | LinkedIn do usuário                | VARCHAR      | 150     | ---                   |
 | github        | GitHub do usuário                  | VARCHAR      | 150     | ---                   |
