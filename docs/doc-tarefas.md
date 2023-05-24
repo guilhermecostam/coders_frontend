@@ -43,10 +43,75 @@ Nesta iteração temos atividades diferentes para dois perfis **Gerentes** e **A
 
 As atividades da **Iteração 2** são:
 
+* Atualização do **Documento de Visão**, pode adicionar requisitos funcionais, se necessário;
+* Atualização do **Documento User Stories** com a lista de User Stories, pode adicionar *User Stories* se necessário.
+  * Deve ser detalhado pelo menos **mais dois User Stories**;
+  * Deve ser implementado pelo menos **dois User Stories**;
+  * Um User Story pode ser formado de um ou mais requisitos funcionais;
+  * Um dos User Stories a ser implementado é o User Story *base* definido na Iteração anterior;
+* Criar o **Documento da Arquitetura** apenas com o modelo (imagem) da *Arquitetura Geral do Sistema* e descreva cada parte desta arquitetura;
+  * Ainda não precisa ser o Documento Arquitetural completo, mas a arquitetura geral do sistemas deste a tela até a base de dados;
+  * [Modelo em Markdown](doc-arquitetura.md)
+  * [Modelo do Google Docs](https://docs.google.com/document/d/1i80vPaInPi5lSpI7rk4QExnO86iEmrsHBfmYRy6RDSM/edit?usp=sharing);
+* Criar **Documento do Tamanho Funcional** com *Análise de Pontos de Função - APF*;
+  * [Modelo em Markdown](doc-apf.md)
+  * [Modelo do Google Docs](https://docs.google.com/document/d/1s4bMbrpQt9RF6tymXvI0HHfQO14hMyL08UxmX1eH82s/edit?usp=sharing);
+  * Faça a contagem indicativa do tamanho funcional do software;
+  * Faça a contagem detalhada do tamanho funcional dos User Stories detalhados;
+* Criar documento com o **Termo de Abertura do Projeto - TAP**, no google docs
+  * O termo de abertura deve ser feito só no google drive.
+  * Pesquise modelos deste documento para comparar;
+  * [Modelo do Go### T02 - Iteração 2 - Desenvolvimento
+
+As atividades da **Iteração 2** são:
+
+* Atualização do **Documento de Visão**, pode adicionar requisitos funcionais, se necessário;
+* Atualização do **Documento User Stories** com a lista de User Stories, pode adicionar *User Stories* se necessário.
+  * Deve ser detalhado pelo menos **mais dois User Stories**;
+  * Deve ser implementado pelo menos **dois User Stories**;
+  * Um User Story pode ser formado de um ou mais requisitos funcionais;
+  * Um dos User Stories a ser implementado é o User Story *base* definido na Iteração anterior;
+* Criar o **Documento da Arquitetura** apenas com o modelo (imagem) da *Arquitetura Geral do Sistema* e descreva cada parte desta arquitetura;
+  * Ainda não precisa ser o Documento Arquitetural completo, mas a arquitetura geral do sistemas deste a tela até a base de dados;
+  * [Modelo em Markdown](doc-arquitetura.md)
+  * [Modelo do Google Docs](https://docs.google.com/document/d/1i80vPaInPi5lSpI7rk4QExnO86iEmrsHBfmYRy6RDSM/edit?usp=sharing);
+* Criar **Documento do Tamanho Funcional** com *Análise de Pontos de Função - APF*;
+  * [Modelo em Markdown](doc-apf.md)
+  * [Modelo do Google Docs](https://docs.google.com/document/d/1s4bMbrpQt9RF6tymXvI0HHfQO14hMyL08UxmX1eH82s/edit?usp=sharing);
+  * Faça a contagem indicativa do tamanho funcional do software;
+  * Faça a contagem detalhada do tamanho funcional dos User Stories detalhados;
+
 #### Gerentes It02
+
+* Definir e descrever as tarefas (issues) da Iteração 2 (milestones) e
+alocar as issues para cada membro da equipe;
+* Definir qual User Story cada membro da equipe vai especificar/detalhar;
+  * Detalhar ou Especificar um US é criar a descrição (estória do usuário) e os testes de aceitação;
+* Definir quem vai construir a Arquitetura Geral do Sistema que faz parte do **Documento Projeto Arquitetural** e o que cada membro da equipe vai preparar;
+* O gerente deve fazer a contagem indicativa do tamanho funcional de Projeto;
+* Definir quem vai fazer a contagem detalhada do tamanho funcional de cada User Story;
+* Fechar tarefas se concluída;
 
 #### Analistas It02
 
+* Trabalhar nas tarefas e realizar pequenos commits marcando com a hashtag da issue;
+* Enviar commits do User Story que detalhou;
+* Enviar commits da contagem do User Story que detalhou;
+* Enviar commits das outras tarefas;
+* Avisar ao gerente quando concluir uma tarefa;
+
 #### Desenvolvedor It02
 
+* Trabalhar nas tarefas e realizar pequenos commits marcando com a hashtag da issue;
+* Enviar commits da implementação do User Story;
+* Enviar commits da implementação de **Testes de Unidade** do User Story que implementou;
+* Avisar ao gerente quando concluir uma tarefa;
+
 #### Testador It02
+
+* Trabalhar nas tarefas e realizar pequenos commits marcando com a hashtag da issue;
+* Executar cada teste de aceitação do User Story, anotando o resultado em um Markdown dos Resultados dos Testes de Aceitação;
+* Cadastrar issues de bugs caso os Testes de Aceitação não passem;
+* Avisar ao gerente quando concluir uma tarefa;
+
+
