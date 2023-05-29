@@ -54,17 +54,12 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 | RF013 - Conectar usuário com colaborador   | Quando um colaborador entra em um projeto conectar ele com o usuário.                                                                     | Usuário |
 | RF014 - Adicionar tecnologia               | Quando um colaborador entra em um projeto conectar ele com o usuário.                                                                     | Usuário |
 | RF015 - Remover tecnologia                 | O usuário pode remover uma tecnologia associada ao seu perfil.                                                                            | Usuário |
-| RF016 - Listar repositórios do usuário     | Listar os repositórios do usuários e linguagens que ele possui.                                                                           | Usuário 
-|
-| RF017 - Registro de usuários               | Permitir que os usuários se registrem na plataforma fornecendo informações básicas, como nome, email e senha.                             | Usuário
-|
-| RF018 - Autenticação de usuário            | O usuário deve conseguir realizar login e ser reconhecido pelo sistema para ter autorização ao tentar utilizar certos recursos.           | Usuário
-|
-| RF019 - Participação em projetos           | O usuário deve conseguir se inscrever como colaborador de um projeto.                                                                     | Usuário
-|
-| RF020 - Restrições de Acesso/Autorizações  | Limitar o acesso a determinadas áreas da plataforma apenas a usuários autenticados ou com permissões específicas.                         | Usuário
-|
-| RF021 - Recuperação de senha               | O usuário deve conseguir recuperar sua senha caso necessário.                                                                             | Usuário
+| RF016 - Listar repositórios do usuário     | Listar os repositórios do usuários e linguagens que ele possui.                                                                           | Usuário |
+| RF017 - Registro de usuários               | Permitir que os usuários se registrem na plataforma fornecendo informações básicas, como nome, email e senha.                             | Usuário |
+| RF018 - Autenticação de usuário            | O usuário deve conseguir realizar login e ser reconhecido pelo sistema para ter autorização ao tentar utilizar certos recursos.           | Usuário |
+| RF019 - Participação em projetos           | O usuário deve conseguir se inscrever como colaborador de um projeto.                                                                     | Usuário |
+| RF020 - Restrições de Acesso/Autorizações  | Limitar o acesso a determinadas áreas da plataforma apenas a usuários autenticados ou com permissões específicas.                         | Usuário |
+| RF021 - Recuperação de senha               | O usuário deve conseguir recuperar sua senha caso necessário.                                                                             | Usuário |
 
 ### Modelo Conceitual
 
