@@ -21,7 +21,6 @@ O sistema a ser desenvolvido tem como objetivo fornecer uma plataforma para faci
 
 * [Demonstração inicial simples de React](https://react.dev/learn/tutorial-tic-tac-toe)
 * [Guia de Uso do Markdown](https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown)
-* 
 <hr>
 
 #### [Link para o repositório do Back-end do projeto](https://github.com/guilhermecostam/coders_backend)
