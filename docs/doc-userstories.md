@@ -121,3 +121,57 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Código                   | Descrição                                 |
 | TA01.01                  | ...                                       |
 
+### User Story US05 - Registro de usuários
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | O sistema deve permitir que usuários realizem cadastros utilizado email ou user name, uma senha e seu nome para que este consiga ser reconhecido pelo sistema.  |
+
+| **Requisitos envolvidos** |                            |
+| ------------------------- | :------------------------- |
+| RF17                      | Registro de usuários       |
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 8 h                                 | 
+| **Tempo Gasto (real):**   | 10 h                                | 
+| **Tamanho Funcional**     | 7 PF                                | 
+| **Analista**              | Guilherme Costa                     | 
+| **Desenvolvedor**         | Jonathan Tauan                      | 
+| **Revisor**               | João Vitor                          | 
+| **Testador**              | Rusdrael Antony                     | 
+
+
+| Testes de Aceitação (TA) |                                           |
+| ------------------------ | ----------------------------------------- |
+| **Código**               | **Descrição**                             |
+| **TA01.01**              | ...                                       |
+
+### User Story US06 - Login
+
+|               |                                                                |
+| ------------- | :------------------------------------------------------------- |
+| **Descrição** | O sistema deve ser capaz de realizar a autenticação de usuários por meio de um email ou user name e sua senha que foi registrada, devendo retornar um token para ser utilizado durante a sua interação com o sistema para autorização de determinados recursos.  |
+
+| **Requisitos envolvidos** |                            |
+| ------------------------- | :------------------------- |
+| RF17                      | Registro de usuários       |
+
+|                           |                                     |
+| ------------------------- | ----------------------------------- | 
+| **Prioridade**            | Essencial                           | 
+| **Estimativa**            | 6 h                                 | 
+| **Tempo Gasto (real):**   | 5 h                                | 
+| **Tamanho Funcional**     | 5 PF                                | 
+| **Analista**              | Rusdrael Antony                     | 
+| **Desenvolvedor**         | Jonathan Tauan                      | 
+| **Revisor**               | João Vitor                          | 
+| **Testador**              | Guilherme Costa                     | 
+
+
+| Testes de Aceitação (TA) |                                           |
+| ------------------------ | ----------------------------------------- |
+| **Código**               | **Descrição**                             |
+| **TA01.01**              | ...                                       |
+
