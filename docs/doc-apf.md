@@ -36,9 +36,8 @@ erDiagram
 |  Apagar projeto        |    EE    |    1    |    2    |      Baixa       | 2 PF              |
 |  Consultar projeto     |    CE    |    1    |    2    |      Baixa       | 3 PF              |
 |  Atualizar projeto     |    EE    |    2    |    5    |      Baixa       | 3 PF              |
-|  Criar colaborador     |    EE    |    1    |    2    |      Baixa       | 2 PF              |
+|  Adicionar colaborador |    EE    |    1    |    2    |      Baixa       | 2 PF              |
 |  Apagar colaborador    |    EE    |    1    |    2    |      Baixa       | 2 PF              |
-|  Consultar colaborador |    CE    |    1    |    2    |      Baixa       | 3 PF              |
-|  Atualizar colaborador |    EE    |    2    |    3    |      Baixa       | 3 PF              |
-|   **Total**            |          |         |         |     **Cd**       | **56 PF**         |
+|  Recusar colaborador   |    CE    |    1    |    2    |      Baixa       | 3 PF              |
+|   **Total**            |          |         |         |     **Cd**       | **53 PF**         |
 
