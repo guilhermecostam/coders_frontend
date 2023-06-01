@@ -20,6 +20,7 @@
       "import/prefer-default-export": "off",
       "import/no-unused-modules": [1, { "unusedExports": true }],
       "react/prop-types": 0,
+      "import/no-unresolved": "off",
       "import/order": [
         "error",
         {
