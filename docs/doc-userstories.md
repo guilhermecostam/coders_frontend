@@ -23,9 +23,9 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **Estimativa**            | 12 h                                | 
 | **Tempo Gasto (real):**   | ...                                 | 
 | **Tamanho Funcional**     | 7 PF                                | 
-| **Analista**              | Guilherme Costa                     | 
-| **Desenvolvedor**         | Jonathan Tauan                      | 
-| **Revisor**               | João Vitor                          | 
+| **Analista**              | Jonathan Tauan                     | 
+| **Desenvolvedor**         | José Victor                      | 
+| **Revisor**               | Guilherme Costa                          | 
 | **Testador**              | Rusdrael Antony                     | 
 
 
