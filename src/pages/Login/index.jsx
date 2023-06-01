@@ -26,14 +26,13 @@ export default function Login() {
           <Button type="submit" variant="contained" fullWidth>ENTRAR</Button>
         </Grid>
         <Grid item>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary" marginBottom={0.4}>
             Crie uma conta
             <Link to="/register">
               <MuiLink variant="body2" color="text.link" sx={{ ml: 0.4 }}>aqui</MuiLink>
             </Link>
           </Typography>
-        </Grid>
-        <Grid item>
+
           <Typography variant="body2" color="text.secondary">
             Perdeu sua senha?
             <Link to="/recover">
