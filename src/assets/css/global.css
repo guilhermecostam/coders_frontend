@@ -5,6 +5,11 @@
 }
 
 body {
-  background-image: url('../images/background.jpg');
+  background-image: url('images/background.jpg');
   background-size: cover;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none !important;
 }
