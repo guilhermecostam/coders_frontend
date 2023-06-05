@@ -15,9 +15,6 @@ export const theme = createTheme({
       dark: '#20B4A2',
       contrastText: '#FFFFFF',
     },
-    text: {
-      link: '#A85AAF',
-    },
     grey: {
       400: '#BDBDBD',
     },
