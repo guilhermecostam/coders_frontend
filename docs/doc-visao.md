@@ -63,11 +63,7 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 
 ### Modelo Conceitual
 
-Abaixo apresentamos o modelo conceitual usando o **Mermaid**.
-
-![Diagrama de classes](mermaid/classes-modelo.png)
-
-O código que gera o diagrama está [Aqui!](mermaid/classes-mermaid.md). O detalhamento dos modelos conceitual e de dados do projeto estão no [Documento de Modelos](doc-modelos.md).
+O modelo conceitual usando o **Mermaid**, pode ser acessado clicando [aqui](./doc-modelos.md).
 
 #### Descrição das Entidades
 
