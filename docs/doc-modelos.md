@@ -8,51 +8,55 @@ Neste documento temos o Modelo de Dados (Entidade-Relacionamento). Temos também
 
 ```mermaid
 erDiagram
+    Projeto ||--o{ RequisicaoProjeto : tem
+    RequisicaoProjeto }o--|| Usuario : tem
     Usuario ||--|| Endereco : tem
-    Usuario }o--|{ UsuarioProjeto : pertence
-    Projeto }o--|{ UsuarioProjeto : pertence
+    Usuario ||--o{ Colaborador : pode_ser
+    Projeto }|--|{ Colaborador : pertence
 ```
 
 ### Descrição das Entidades
 
 Descrição sucinta das entidades presentes no sistema.
 
-| Entidade       | Descrição                                                                                                                                            |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Usuário        | Entidade abstrata para representar informações gerais dos Usuários: id, nome, data_nasc, telefone, email, área atuação, linkedin, github e endereço. |
-| Endereço       | Entidade que representa um Endereço tem as informações: id, rua, número, bairro, cidade, estado, cep, complemento.                                   |
-| Projeto        | Entidade que representa um Projeto tem as informações: id, título, tecnologia, descrição, discord e dono.                                            |
-| UsuarioProjeto | Entidade que representa o relacionamento entre usuário e projeto tem as informações: id, tipo, usuario e projeto.                                    |
+| Entidade          | Descrição                                                                                                                                            |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Usuario           | Entidade abstrata para representar informações gerais dos Usuários: id, nome, data_nasc, telefone, email, linkedin, github, endereco e username.     |
+| Endereco          | Entidade que representa um Endereço tem as informações: id, rua, numero, bairro, cidade, estado, cep, complemento.                                   |
+| Projeto           | Entidade que representa um Projeto tem as informações: id, titulo, descricao, discord e dono.                                            |
+| RequisicaoProjeto | Entidade que irá persistir as requisições de colaboradores para participarem de um projeto, tem as informações: id, usuario, projeto e status.       |
+| Colaborador       | Entidade que representa o relacionamento entre usuário e projeto tem as informações: id, usuario e projeto.                                          |
 
 ### Dicionário de Dados
 
-|   Tabela   | Usuário                                                    |
+|   Tabela   | Usuario                                                    |
 | ---------- | ---------------------------------------------------------- |
 | Descrição  | Armazena as informações de um usuário.                     |
 | Observação | Usuários podem ser proprietário de projeto ou colaborador. |
 
 |  Nome         | Descrição                          | Tipo de Dado | Tamanho | Restrições de Domínio |
 | ------------- | ---------------------------------- | ------------ | ------- | --------------------- |
-| id            | identificador gerado pelo SGBD     | SERIAL       | ---     | PK / Identity         |
+| id            | identificador gerado pelo ORM      | SERIAL       | ---     | PK / Identity         |
 | data_nasc     | data de nascimento do usuário      | DATE         | ---     | Not Null              |
 | nome          | nome do usuário                    | VARCHAR      | 150     | Not Null              |
 | senha         | senha do usuário                   | VARCHAR      | 150     | Not Null              |
 | telefone      | telefone do usuário                | VARCHAR      | 150     | Not Null              |
-| linkedin      | LinkedIn do usuário                | VARCHAR      | 150     | ---                   |
-| github        | GitHub do usuário                  | VARCHAR      | 150     | ---                   |
+| linkedin      | Url para LinkedIn do usuário       | VARCHAR      | 150     | ---                   |
+| github        | nome de usuário do GitHub          | VARCHAR      | 150     | ---                   |
 | e-mail        | e-mail de contato do usuário       | VARCHAR      | 150     | Not Null              |
 | endereco      | endereço vinculado ao usuário      | SERIAL       | ---     | FK / Not Null         |
+| username      | nome de usuário para login         | VARCHAR      | ---     | FK / Not Null         |
 
 <hr>
 
-|   Tabela   | Endereço                                                    |
+|   Tabela   | Endereco                                                    |
 | ---------- | ----------------------------------------------------------- |
 | Descrição  | Armazena as informações de endereço referente a um usuário. |
 | Observação | ---                                                         |
 
 |  Nome         | Descrição                          | Tipo de Dado | Tamanho | Restrições de Domínio |
 | ------------- | ---------------------------------- | ------------ | ------- | --------------------- |
-| id            | identificador gerado pelo SGBD     | SERIAL       | ---     | PK / Identity         |
+| id            | identificador gerado pelo ORM      | SERIAL       | ---     | PK / Identity         |
 | rua           | rua do endereço do usuário         | VARCHAR      | 150     | Not Null              |
 | numero        | numero do endereço do usuário      | VARCHAR      | 150     | Not Null              |
 | bairro        | bairro do endereço do usuário      | VARCHAR      | 150     | Not Null              |
@@ -70,8 +74,7 @@ Descrição sucinta das entidades presentes no sistema.
 
 |  Nome         | Descrição                              | Tipo de Dado | Tamanho | Restrições de Domínio |
 | ------------- | -------------------------------------- | ------------ | ------- | --------------------- |
-| id            | identificador gerado pelo SGBD         | SERIAL       | ---     | PK / Identity         |
-| tecnologia    | tecnologia(s) utilizada(s) no projeto  | VARCHAR      | 250     | Not Null              |
+| id            | identificador gerado pelo ORM          | SERIAL       | ---     | PK / Identity         |
 | descricao     | detalhes sobre o projeto               | VARCHAR      | 250     | ---                   |
 | titulo        | título do projeto                      | VARCHAR      | 150     | Not Null              |
 | discord       | Discord do projeto                     | VARCHAR      | 150     | ---                   |
@@ -79,14 +82,27 @@ Descrição sucinta das entidades presentes no sistema.
 
 <hr>
 
-|   Tabela   | UsuarioProjeto                                                    |
+|   Tabela   | Colaborador                                                       |
 | ---------- | ----------------------------------------------------------------- |
 | Descrição  | Armazena as informações do tipo de usuário do projeto.            |
 | Observação | ---                                                               |
 
 |  Nome         | Descrição                          | Tipo de Dado | Tamanho | Restrições de Domínio |
 | ------------- | ---------------------------------- | ------------ | ------- | --------------------- |
-| id            | identificador gerado pelo SGBD     | SERIAL       | ---     | PK / Identity         |
-| tipo          | tipo de usuário                    | INT          | ---     | Not Null              |
+| id            | identificador gerado pelo ORM      | SERIAL       | ---     | PK / Identity         |
+| usuario       | usuário vinculado ao projeto       | SERIAL       | ---     | FK / Not Null         |
+| projeto       | projeto vinculado ao usuario       | SERIAL       | ---     | FK / Not Null         |
+
+<hr>
+
+|   Tabela   | RequisicaoProjeto                                                |
+| ---------- | ----------------------------------------------------------------- |
+| Descrição  | Armazena as informações das solicitações de ingresso em projetos. |
+| Observação | ---                                                               |
+
+|  Nome         | Descrição                          | Tipo de Dado | Tamanho | Restrições de Domínio |
+| ------------- | ---------------------------------- | ------------ | ------- | --------------------- |
+| id            | identificador gerado pelo ORM      | SERIAL       | ---     | PK / Identity         |
+| status        | status atual da requisição         | INT          | ---     | Not Null              |
 | usuario       | usuário vinculado ao projeto       | SERIAL       | ---     | FK / Not Null         |
 | projeto       | projeto vinculado ao usuario       | SERIAL       | ---     | FK / Not Null         |
