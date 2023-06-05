@@ -34,6 +34,7 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 | Perfil  | Descrição                                                                                                                                                                                                                                                             |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Usuário | Terá um cadastro no sistema, o usuário poderá publicar suas ideias de projetos para que outros usuários possam se interessar no desenvolvimento em conjunto ou buscar por projetos postados que tem como requisitos que se assemelham com suas competências técnicas. |
+| Colaborador | Um colaborador é um usuário que participa de um projeto, como dono ou colaborador comum, o colaborador irá conseguir realizar determinadas ações em um projeto em que este colabora. |
 
 ## Lista de Requisitos Funcionais
 
