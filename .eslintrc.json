@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
     "extends": [
         "plugin:react/recommended",
@@ -18,7 +19,6 @@
     ],
     "rules": {
       "import/prefer-default-export": "off",
-      "import/no-unused-modules": [1, { "unusedExports": true }],
       "react/prop-types": 0,
       "import/no-unresolved": "off",
       "import/order": [
