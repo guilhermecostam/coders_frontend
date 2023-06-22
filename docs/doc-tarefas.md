@@ -114,4 +114,75 @@ alocar as issues para cada membro da equipe;
 * Cadastrar issues de bugs caso os Testes de Aceitação não passem;
 * Avisar ao gerente quando concluir uma tarefa;
 
+## Atividades por Iteração
+
+Nesta página teremos de forma geral a descrição das atividades em cada Iteração de desenvolvimento do projeto. Na página [Plano de Iteração e Plano de Release](doc-iteracao.md) temos um exemplo de cronograma.
+
+No processo de desenvolvimento que utilizamos da disciplina, inspirados no XP e YP, temos as seguintes fases:
+* Planejamento
+  * Criação dos documentos iniciais;
+  * Iteração 1;
+* Inicialização
+  * Estruturação do projeto, planejamento de iterações, definições de arquitetura;s
+  * Iteração 2;
+* Desenvolvimento
+  * atualização do planejamento, implementação, testes e implantação;
+  * demais iterações sempre finalizando com um MVP.
+
+### T03 - Iteração 3 - Desenvolvimento
+
+A Iteração 3 começou dia 05/05/2023 e vai até 25/05/2023. As atividades dessa tarefa são:
+
+* Atualização do Documento de Visão (formato Markdown), melhorar escrita e adicionar novos requisitos funcionais, se necessário;
+* Atualização do Documento de Modelos (formato Markdown e mermaid), deixar os diagramas de Dados ou Modelo Conceitual atualizados com os requisitos;
+* Atualizar Plano de Iteração com os User Stories detalhados, implementados e testados;
+* Atualização do Documento Lista de User Stories, adicionar User Stories se necessário;
+
+
+#### Gerentes It03
+
+* Criar Milestones da Iteração 3;
+* Definir e descrever as tarefas (issues) da Iteração 3 (milestones) e
+alocar as issues para cada membro da equipe;
+* Atualizar Plano de Release e Plano de Iteração;
+* Definir qual User Story cada membro da equipe vai descrever/detalhar;
+  * Detalhar ou Descrever um US é criar a descrição (estória do usuário) e os testes de aceitação);
+* Definir quem vai detalhar a Arquitetura do Sistema que faz parte do **Documento Projeto Arquitetural** e o que cada membro da equipe vai preparar;
+* O gerente deve fazer a contagem indicativa do tamanho funcional de Projeto;
+* Verificar a Contagem Detalhada do tamanho funcional do Sistema;
+* Executar análise do SonarCloud.io;
+* Verificar os problemas detectados pelo SonarCloud e criar tarefas no github;
+* Verificar Cobertura dos Testes de Unidade para pelo menos 30%;
+* Cadastrar issues de bugs caso detectados pelo Testador no relatório de testes;
+* Cadastrar issues de correção de implementação caso detectados pelo Testador no relatório de testes;
+* Fechar tarefas se concluída;
+
+#### Analistas It03
+
+* Trabalhar nas tarefas e realizar pequenos commits marcando com a hashtag da issue;
+* Enviar commits do User Story que detalhou;
+* Enviar commits da contagem do User Story que detalhou;
+  * Checar a contagem detalhada do Sistema para contemplar esse User Story;
+* Enviar commits das outras tarefas;
+* Avisar ao gerente quando concluir uma tarefa;
+
+#### Desenvolvedor It03
+
+* Trabalhar nas tarefas e realizar pequenos commits marcando com a hashtag da issue;
+* Enviar commits da implementação do User Story da Iteração;
+* Enviar commits da implementação de **Testes de Unidade** do User Story que implementou;
+* Verificar se o SonarCloud.io detectou problemas no seu código;
+* Resolver os problemas detectados pelo SonarCloud que o gerente alocou para você;
+* Deixar a Cobertura dos Testes de Unidade para pelo menos 30%;
+* Avisar ao gerente quando concluir uma tarefa;
+
+#### Testador It03
+
+* Trabalhar nas tarefas e realizar pequenos commits marcando com a hashtag da issue;
+* Executar cada teste de aceitação do User Story, anotando o resultado em um Markdown dos Resultados dos Testes de Aceitação;
+* Cadastrar issues de bugs caso os Testes de Aceitação não passem;
+* Avisar ao getente os bugs e correções necessárias descritas relatório de testes;
+* Avisar ao gerente quando concluir uma tarefa;
+
+
 
