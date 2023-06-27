@@ -147,7 +147,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | ------------------------- | ----------------------------------- | 
 | Prioridade                | Essencial                           | 
 | Estimativa                | 08 h                                | 
-| Tempo Gasto (real):       | ...                                 | 
+| Tempo Gasto (real):       | 10 h                                | 
 | Tamanho Funcional         | 5 PF                                | 
 | Analista                  | Jonathan Tauan                      | 
 | Desenvolvedor             | Rusdrael Antony                     | 
@@ -287,7 +287,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | ------------------------- | ----------------------------------- | 
 | Prioridade                | Essencial                           | 
 | Estimativa                | 04 h                                | 
-| Tempo Gasto (real):       | ...                                 | 
+| Tempo Gasto (real):       | 05 h                                | 
 | Tamanho Funcional         | 3 PF                                | 
 | Analista                  | Jonathan Tauan                      | 
 | Desenvolvedor             | Rusdrael Antony                     | 
