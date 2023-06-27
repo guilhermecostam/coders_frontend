@@ -53,7 +53,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **Analista**              | Rusdrael Antony                     | 
 | **Desenvolvedor**         | Jonathan Tauan                      | 
 | **Revisor**               | João Vitor                          | 
-| **Testador**              | Guilherme Costa                     | 
+| **Testador**              | Rusdrael Antony                     | 
 
 
 | Testes de Aceitação (TA) |                                           |
@@ -196,7 +196,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Analista                  | Jonathan Tauan                      | 
 | Desenvolvedor             | João Vitor                          | 
 | Revisor                   | Rusdrael Antony                     | 
-| Testador                  | Guilherme Costa                     | 
+| Testador                  | José Victor                         | 
 
 
 | Testes de Aceitação (TA) |                                           |
@@ -253,7 +253,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **Analista**              | Jonathan Tauan                      | 
 | **Desenvolvedor**         | José Victor                         | 
 | **Revisor**               | Guilherme Costa                     | 
-| **Testador**              | Rusdrael Antony                     | 
+| **Testador**              | Jonathan Tauan                      | 
 
 
 | Testes de Aceitação (TA) |                                           |
@@ -282,7 +282,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Analista                  | Jonathan Tauan                      | 
 | Desenvolvedor             | Rusdrael Antony                     | 
 | Revisor                   | José Victor                         | 
-| Testador                  | Guilherme Costa                     | 
+| Testador                  | João Vitor                          | 
 
 
 | Testes de Aceitação (TA) |                                           |
