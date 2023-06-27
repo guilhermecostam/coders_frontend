@@ -26,13 +26,23 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **Testador**              | Rusdrael Antony                     | 
 
 
-| Testes de Aceitação (TA) |                                           |
-| ------------------------ | ----------------------------------------- |
-| **Código**               | **Descrição**                             |
-| **TA01.01**              | Teste de registro informando dados corretos  |
-| **TA01.02**              | Teste de registro informando senha sem requisitos mínimos|
-| **TA01.03**              | Teste de registro informando confirmação de senha difente|
-| **TA01.04**              | Teste de registro informando email inválido|
+| Testes de Aceitação (TA) |                                                              |                   |               |
+| ------------------------ | ------------------------------------------------------------ | ----------------- | ------------- |
+| **Código**               | **Descrição**                                                | **Especificação** | **Resultado** |
+| **TA01**                 | Registrar Usuário                                            | Especificação Ok. | Ok.           |
+| **TA01.01**              | O ator preenche os dados corretamente, como é pedido;        |                   |               |
+| **TA01.02**              | O ator seleciona a opção Cadastrar;                          |                   |               |
+| **TA01.03**              | O sistema salva os dados;                                    |                   |               |
+| **TA01.04**              | O sistema exibe uma mensagem de sucesso;                     |                   |               |
+| **TA01.05**              | Fim do fluxo.                                                |                   |               |
+| **TA02**                 | Registrar Usuário Errado                                     | Especificação Ok. | Ok.           |
+| **TA02.01**              | O ator preenche os dados errados;                            |                   |               |
+| **TA02.02**              | O ator seleciona a opção Cadastrar;                          |                   |               |
+| **TA02.03**              | O sistema não salva os dados;                                |                   |               |
+| **TA02.04**              | O sistema exibe uma mensagem de erro ao tentar cadastrar e pede para o usuário tentar de novo;                     |                   |               |
+| **TA02.05**              | Fim do fluxo.                                                |                   |               |
+
+
 
 ### User Story US02 - Login
 
