@@ -87,6 +87,12 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **TA02.04**              | O sistema exibe uma mensagem de erro ao tentar logar e pede para o usuário tentar de novo;                     |                   |               |
 | **TA02.05**              | Fim do fluxo.                                                |                   |               |
 
+| Relatório de Bugs e Providências |                                     |                   |               
+| -------------------------------- | ----------------------------------- | ----------------- |
+| **Testes**                       | **Providência**                     | **Tarefas/Tipo**  | 
+| **TA01**                         | Nenhuma.                            | Nenhuma.          | 
+| **TA02**                         | Nenhuma.                            | Nenhuma.          |
+
 ### User Story US03 - Solicitação para ingressar em um Projeto
 
 |               |                                                                |
