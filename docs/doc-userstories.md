@@ -66,13 +66,21 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **Testador**              | Rusdrael Antony                     | 
 
 
-| Testes de Aceitação (TA) |                                           |
-| ------------------------ | ----------------------------------------- |
-| **Código**               | **Descrição**                             |
-| **TA01.01**              | Teste de login infomando senha incorreta  |
-| **TA01.02**              | Teste de login infomando usuário não registrado  |
-| **TA01.03**              | Teste de login infomando senha e email corretos de um usuário registrado  |
-| **TA01.04**              | Teste de login infomando senha e username corretos de um usuário registrado  |
+| Testes de Aceitação (TA) |                                                              |                   |               |
+| ------------------------ | ------------------------------------------------------------ | ----------------- | ------------- |
+| **Código**               | **Descrição**                                                | **Especificação** | **Resultado** |
+| **TA01**                 | Login Usuário                                                | Especificação Ok. | Ok.           |
+| **TA01.01**              | O ator preenche os dados corretamente, como é pedido;        |                   |               |
+| **TA01.02**              | O ator seleciona a opção Login;                              |                   |               |
+| **TA01.03**              | O sistema salva os dados;                                    |                   |               |
+| **TA01.04**              | O sistema exibe uma mensagem de sucesso;                     |                   |               |
+| **TA01.05**              | Fim do fluxo.                                                |                   |               |
+| **TA02**                 | Login Usuário Errado                                         | Especificação Ok. | Ok.           |
+| **TA02.01**              | O ator preenche os dados errados;                            |                   |               |
+| **TA02.02**              | O ator seleciona a opção Login;                              |                   |               |
+| **TA02.03**              | O sistema não salva os dados;                                |                   |               |
+| **TA02.04**              | O sistema exibe uma mensagem de erro ao tentar logar e pede para o usuário tentar de novo;                     |                   |               |
+| **TA02.05**              | Fim do fluxo.                                                |                   |               |
 
 ### User Story US03 - Solicitação para ingressar em um Projeto
 
