@@ -18,5 +18,8 @@ export const theme = createTheme({
     grey: {
       400: '#BDBDBD',
     },
+    gradient: {
+      main: 'linear-gradient(90deg, #620C9B, #28E0CA)',
+    },
   },
 });
