@@ -12,6 +12,7 @@ dist
 dist-ssr
 .scannerwork
 *.local
+coverage
 
 # Editor directories and files
 .vscode/*

@@ -12,6 +12,10 @@ describe('Testando página de Login', () => {
       </BrowserRouter>,
     );
 
-    screen.debug();
+    const emailInput = screen.getByLabelText('Email ou usuário');
+    const passwordInput = screen.getByLabelText('Senha');
+
+    expect(emailInput).toBeInTheDocument();
+    expect(passwordInput).toBeInTheDocument();
   });
 });
