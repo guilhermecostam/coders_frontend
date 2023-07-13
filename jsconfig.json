@@ -8,6 +8,7 @@
       "images/*": ["./src/assets/images/*"],
       "containers/*": ["./src/containers/*"],
       "components/*": ["./src/components/*"],
+      "helpers/*": ["./src/helpers/*"],
     }
   },
   "exclude": ["node_modules"]

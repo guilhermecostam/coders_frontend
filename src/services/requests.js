@@ -4,17 +4,16 @@ const api = axios.create({
   baseURL: import.meta.env.VITE_APP_API_URL,
 });
 
-export const signIn = async (params) => {
+export const signIn = async (payload) => {
   try {
-    const { data } = await api.post('/account/login', params, {
+    const response = await api.post('/account/login', payload, {
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
       },
     });
-
-    return data;
-  } catch {
-    return null;
+    return response;
+  } catch (error) {
+    const response = error;
+    return response;
   }
 };
