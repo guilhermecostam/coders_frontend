@@ -1,6 +1,6 @@
-import * as yup from 'yup';
+import { z } from 'zod';
 
-export const loginSchema = yup.object().shape({
-  identifier: yup.string().min(3),
-  password: yup.string().min(8),
+export const authenticationUserFormSchema = z.object({
+  identifier: z.string().nonempty('É obrigatório fornecer um usuário.'),
+  password: z.string().min(6, 'Senha inválida'),
 });
