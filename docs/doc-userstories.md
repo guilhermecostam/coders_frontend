@@ -148,7 +148,9 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |                                           |
 | ------------------------ | ----------------------------------------- |
 | Código                   | Descrição                                 |
-| TA01.01                  | ...                                       |
+| **TA01.01**              | Teste de registro informando dados válidos      |
+| **TA01.02**              | Teste de registro informando usuários inválidos |
+| **TA01.03**              | Teste de registro informando projeto inválido   |
 
 ### User Story US06 - Buscar Tecnologia
 
@@ -175,7 +177,8 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) |                                           |
 | ------------------------ | ----------------------------------------- |
 | Código                   | Descrição                                 |
-| TA01.01                  | ...                                       |
+| **TA01.01**              | Teste de registro informando dados válidos        |
+| **TA01.02**              | Teste de registro informando repósitório inválido |
 
 ### User Story US07 - Restringir Acessos e utilizar autorizações 
 
