@@ -11,9 +11,9 @@ export const signIn = async (payload) => {
         'Content-Type': 'application/json',
       },
     });
+
     return response;
   } catch (error) {
-    const response = error;
-    return response;
+    return error;
   }
 };
