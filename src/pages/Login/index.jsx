@@ -9,7 +9,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Toast from 'src/components/Toast';
 import { setSessionToken } from 'src/helpers/session';
 import { authenticationUserFormSchema } from 'src/helpers/validations';
-import { signIn } from 'src/services/requests';
+import { loginRequest } from 'src/services/requests';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -21,27 +21,27 @@ export default function Login() {
     resolver: zodResolver(authenticationUserFormSchema),
   });
 
-  const authenticationUser = async (data) => {
+  const handleForm = async (data) => {
     setLoading(true);
 
-    const response = await signIn(data);
+    const response = await loginRequest(data);
 
     if (response.status === 200) {
       setLoading(false);
       setSessionToken(response.data.token);
       navigate('/feed');
+    } else {
+      setLoading(false);
+      setMessage('Usuário ou senha incorretos.');
+      setOpen(true);
     }
-
-    setLoading(false);
-    setMessage('Usuário ou senha incorretos.');
-    setOpen(true);
   };
 
   return (
     <Container>
       <Toast message={message} severity="error" open={open} setOpen={setOpen} />
-      <form onSubmit={handleSubmit(authenticationUser)}>
-        <Grid container flexDirection="column" textAlign="center" spacing={2} maxWidth={300}>
+      <form onSubmit={handleSubmit(handleForm)}>
+        <Grid container flexDirection="column" textAlign="center" spacing={2} maxWidth={400}>
           <Grid item>
             <Logo />
           </Grid>
@@ -62,7 +62,6 @@ export default function Login() {
               Crie uma conta
               <Link to="/register"> aqui</Link>
             </Typography>
-
             <Typography variant="body2" color="text.secondary">
               Perdeu sua senha?
               <Link to="/recover"> a gente te ajuda</Link>

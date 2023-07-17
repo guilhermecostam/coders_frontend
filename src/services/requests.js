@@ -4,13 +4,23 @@ const api = axios.create({
   baseURL: import.meta.env.VITE_APP_API_URL,
 });
 
-export const signIn = async (payload) => {
+const headers = {
+  'Content-Type': 'application/json',
+};
+
+export const loginRequest = async (payload) => {
   try {
-    const response = await api.post('/account/login', payload, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+    const response = await api.post('/account/login', payload, { headers });
+
+    return response;
+  } catch (error) {
+    return error;
+  }
+};
+
+export const createAccountRequest = async (payload) => {
+  try {
+    const response = await api.post('/account/register', payload, { headers });
 
     return response;
   } catch (error) {
