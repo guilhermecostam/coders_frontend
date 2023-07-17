@@ -11,9 +11,22 @@ body {
 }
 
 a {
+  color: #28E0CA;
   text-decoration: none !important;
 }
 
 button {
   cursor: pointer;
+}
+
+button > a {
+  text-decoration: none !important;
+  color: rgba(255 ,255 ,255 ,0.7);
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
