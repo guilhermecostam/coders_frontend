@@ -8,28 +8,22 @@ const headers = {
   'Content-Type': 'application/json',
 };
 
-export const signIn = async (payload) => {
+export const loginRequest = async (payload) => {
   try {
     const response = await api.post('/account/login', payload, { headers });
 
     return response;
   } catch (error) {
-    const response = error;
-
-    return response;
+    return error;
   }
 };
 
-export const register = async (payload) => {
+export const createAccountRequest = async (payload) => {
   try {
     const response = await api.post('/account/register', payload, { headers });
 
-    console.log(payload);
-
-    // return response;
+    return response;
   } catch (error) {
-    // const response = error;
-
-    // return response;
+    return error;
   }
 };
