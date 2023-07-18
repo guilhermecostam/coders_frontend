@@ -1,19 +1,17 @@
-import { Box } from '@mui/material';
+import { Grid } from '@mui/material';
 import ContainerAuth from 'containers/ContainerAuth';
 import React from 'react';
-import SideMenu from 'src/components/SideMenu';
 
+import Create from './components/Create';
 import Projects from './components/Projects';
 
 export default function Main() {
   return (
     <ContainerAuth>
-      <Box>
+      <Grid item>
+        <Create />
         <Projects />
-      </Box>
-      <Box>
-        <SideMenu />
-      </Box>
+      </Grid>
     </ContainerAuth>
   );
 }
