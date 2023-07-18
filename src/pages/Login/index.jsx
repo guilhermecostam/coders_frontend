@@ -30,8 +30,8 @@ export default function Login() {
       setLoading(false);
       setSessionToken(response.data.token);
       setSessionName(data.identifier);
-      navigate('/feed');
-      window.location.reload();
+      // navigate('/feed');
+      // window.location.reload();
     } else {
       setLoading(false);
       setMessage('Usuário ou senha incorretos.');

@@ -11,7 +11,7 @@ import { CardActionsCustom, CardCustom } from './styles';
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
-  const [setCollaborators] = useState([]);
+  // const [setCollaborators] = useState([]);
   // const [open, setOpen] = React.useState(false);
   // const handleOpen = () => setOpen(true);
   // const handleClose = () => setOpen(false);
@@ -22,19 +22,19 @@ export default function Projects() {
     return response.data;
   };
 
-  const getCollaborators = async () => {
-    const response = await getProjectCollaboratorsRequest();
+  // const getCollaborators = async () => {
+  //   const response = await getProjectCollaboratorsRequest();
 
-    return response.data;
-  };
+  //   return response.data;
+  // };
 
   useEffect(() => {
     const fetchData = async () => {
       const projectData = await getProjects();
-      const collaboratorData = await getCollaborators();
+      // const collaboratorData = await getCollaborators();
 
       setProjects(projectData);
-      setCollaborators(collaboratorData);
+      // setCollaborators(collaboratorData);
     };
 
     fetchData();
