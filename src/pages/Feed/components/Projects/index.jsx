@@ -105,7 +105,9 @@ export default function Projects() {
               <CardActionsCustom>
                 <Box display="flex" gap={1.5}>
                   <Button size="small" variant="outlined" color="secondary" onClick={() => handleOpen()}>Juntar-se</Button>
-                  <Button size="small" color="secondary">Ler mais</Button>
+                  <Link to={`/projects/${project.id}`}>
+                    <Button size="small" variant="text" color="secondary">Ler mais</Button>
+                  </Link>
                 </Box>
                 <Box>
                   {
