@@ -1,4 +1,4 @@
-import { Grid } from '@mui/material';
+import { Divider, Grid } from '@mui/material';
 import ContainerAuth from 'containers/ContainerAuth';
 import React from 'react';
 
@@ -10,6 +10,7 @@ export default function Main() {
     <ContainerAuth>
       <Grid item>
         <Create />
+        <Divider sx={{ margin: '3rem 0' }} />
         <Projects />
       </Grid>
     </ContainerAuth>

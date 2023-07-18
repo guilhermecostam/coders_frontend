@@ -63,6 +63,15 @@ export default function Projects() {
           </Box>
         </Box>
       </Modal>
+      <Box>
+        <Typography color="text.secondary" variant="h6" component="h1">
+          TALVEZ VOCÊ SE INTERESSE POR ESSES
+        </Typography>
+        <Typography color="text.secondary" variant="body2" component="h2">
+          Esse é seu feed de projetos, aqui você pode encontrar projetos que talvez você se interesse em participar.
+        </Typography>
+      </Box>
+
       {
         projects.map((project) => (
           <Grid key={project.id} item xs={12}>

@@ -40,9 +40,9 @@ export const createProjectRequest = async (payload) => {
   }
 };
 
-export const getProjectsRequest = async (payload) => {
+export const getProjectsRequest = async () => {
   try {
-    const response = await api.get('/projects', payload, { headers });
+    const response = await api.get('/projects', { headers });
 
     return response;
   } catch (error) {
