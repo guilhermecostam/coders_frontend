@@ -1,14 +1,19 @@
-import { Share, Favorite } from '@mui/icons-material';
+import { Share, Favorite, GitHub } from '@mui/icons-material';
 import {
-  Box, Button, CardContent, CardMedia, Divider, Grid, IconButton, Typography,
+  Box, Button, CardContent, CardMedia, Divider, Grid, IconButton, Modal, Typography,
 } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import Discord from 'src/components/Icons/Discord';
 import { getProjectsRequest } from 'src/services/requests';
 
 import { CardActionsCustom, CardCustom } from './styles';
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   const getProjects = async () => {
     const response = await getProjectsRequest();
@@ -19,14 +24,45 @@ export default function Projects() {
     const fetchData = async () => {
       const projectData = await getProjects();
       setProjects(projectData);
-      console.log(projectData);
     };
 
     fetchData();
   }, []);
 
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 360,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 2,
+  };
+
   return (
     <Grid container width={600} gap={4}>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Typography id="modal-modal-title" variant="h6" component="h2" color="text.secondary">
+            Juntar-se ao projeto.
+          </Typography>
+          <Typography id="modal-modal-description" mt={2} color="text.secondary">
+            Enviar solicitação ao dono para participar desse projeto?
+          </Typography>
+
+          <Box display="flex" justifyContent="space-between" mt={5}>
+            <Button size="small" variant="outlined" color="success" onClick={() => handleOpen()}>Sim, quero fazer parte</Button>
+            <Button size="small" variant="outlined" color="error" onClick={() => handleClose()}>Voltar</Button>
+          </Box>
+        </Box>
+      </Modal>
       {
         projects.map((project) => (
           <Grid key={project.id} item xs={12}>
@@ -41,7 +77,7 @@ export default function Projects() {
                   <Typography gutterBottom variant="body2" component="h2">
                     {/* {owners[project.ownerId].name} */}
                   </Typography>
-                  <Typography gutterBottom variant="body2" component="h3" color="text.secondary">
+                  <Typography gutterBottom variant="body2" component="h3">
                     {/* {owners[project.ownerId].description} */}
                   </Typography>
                 </Box>
@@ -58,15 +94,33 @@ export default function Projects() {
                 </Typography>
               </CardContent>
               <CardActionsCustom>
-                <Box>
-                  <Button size="small" color="secondary">Juntar-se</Button>
-                  <Button size="small" color="secondary">Leia mais</Button>
+                <Box display="flex" gap={1.5}>
+                  <Button size="small" variant="outlined" color="secondary" onClick={() => handleOpen()}>Juntar-se</Button>
+                  <Button size="small" color="secondary">Ler mais</Button>
                 </Box>
                 <Box>
-                  <IconButton aria-label="add to favorites">
+                  {
+                    project.discordUrl && (
+                    <IconButton aria-label="discord">
+                      <Link to={project.discordUrl}>
+                        <Discord />
+                      </Link>
+                    </IconButton>
+                    )
+                  }
+                  {
+                    project.githubUrl && (
+                    <IconButton aria-label="github">
+                      <Link to={project.githubUrl}>
+                        <GitHub />
+                      </Link>
+                    </IconButton>
+                    )
+                  }
+                  <IconButton aria-label="share">
                     <Share />
                   </IconButton>
-                  <IconButton aria-label="share">
+                  <IconButton aria-label="favorite">
                     <Favorite />
                   </IconButton>
                 </Box>
