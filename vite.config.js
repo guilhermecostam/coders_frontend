@@ -16,6 +16,7 @@ export default defineConfig({
       images: '/src/assets/images',
       containers: '/src/containers',
       components: '/src/components',
+      helpers: '/src/helpers',
     },
   },
 });

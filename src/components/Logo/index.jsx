@@ -1,9 +1,8 @@
+import logo from 'images/logo.svg';
 import React from 'react';
 
-import logo from '../../assets/images/logo.svg';
-
-export default function Logo({ width, height }) {
+export default function Logo({ width, height, style }) {
   return (
-    <img src={logo} width={width} height={height} alt="logo" />
+    <img src={logo} width={width} height={height} style={{ ...style }} alt="logo" />
   );
 }

@@ -18,5 +18,14 @@ export const theme = createTheme({
     grey: {
       400: '#BDBDBD',
     },
+    gradient: {
+      main: 'linear-gradient(90deg, #620C9B, #28E0CA)',
+    },
+    transparent: {
+      main: 'rgba(0, 0, 0, 1)',
+    },
+    shadow: {
+      main: '0 4px 4px rgba(0, 0, 0, 0.40)',
+    },
   },
 });
