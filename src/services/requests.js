@@ -27,3 +27,13 @@ export const createAccountRequest = async (payload) => {
     return error;
   }
 };
+
+export const createProjectRequest = async (payload) => {
+  try {
+    const response = await api.post('/account/register', payload, { headers });
+
+    return response;
+  } catch (error) {
+    return error;
+  }
+};
