@@ -50,6 +50,17 @@ export const getProjectsRequest = async () => {
   }
 };
 
+export const getProjectRequest = async ({ id }) => {
+  console.log(id);
+  try {
+    const response = await api.get(`/projects/${id}`, { headers });
+
+    return response;
+  } catch (error) {
+    return error;
+  }
+};
+
 export const getProjectCollaboratorsRequest = async (projectId) => {
   try {
     const response = await api.get(`/projects/${projectId}/collaborators`, { headers });
