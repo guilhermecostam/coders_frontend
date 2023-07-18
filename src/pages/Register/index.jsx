@@ -80,7 +80,7 @@ export default function Register() {
                   <TextField {...register('passwordConfirm')} label="Repita a senha" type="password" size="small" error={!!errors.passwordConfirmation} helperText={errors.passwordConfirmation && errors.passwordConfirmation.message} fullWidth />
                 </Grid>
                 <Grid item>
-                  <LoadingButton type="submit" variant="contained" loading={loading} fullWidth>ENTRAR</LoadingButton>
+                  <LoadingButton type="submit" variant="contained" loading={loading} fullWidth>CRIAR CONTA</LoadingButton>
                 </Grid>
                 <Grid item>
                   <Typography variant="body2" color="text.secondary" marginBottom={0.4}>

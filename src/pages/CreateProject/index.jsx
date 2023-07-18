@@ -26,13 +26,13 @@ export default function createProject() {
 
     const response = await createProjectRequest(data);
 
-    if (response.status === 200) {
+    if (response.status === 200 || response.status === 201) {
       setLoading(false);
       setSessionToken(response.data.token);
       navigate('/feed');
     } else {
       setLoading(false);
-      setMessage('Usuário ou senha incorretos.');
+      setMessage('Algo de errado ocorreu.');
       setOpen(true);
     }
   };

@@ -49,3 +49,13 @@ export const getProjectsRequest = async () => {
     return error;
   }
 };
+
+export const getProjectCollaboratorsRequest = async (projectId) => {
+  try {
+    const response = await api.get(`/projects/${projectId}/collaborators`, { headers });
+
+    return response;
+  } catch (error) {
+    return error;
+  }
+};
