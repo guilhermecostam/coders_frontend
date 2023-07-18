@@ -5,25 +5,36 @@ import {
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Discord from 'src/components/Icons/Discord';
-import { getProjectsRequest } from 'src/services/requests';
+import { getProjectCollaboratorsRequest, getProjectsRequest } from 'src/services/requests';
 
 import { CardActionsCustom, CardCustom } from './styles';
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
+  const [setCollaborators] = useState([]);
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   const getProjects = async () => {
     const response = await getProjectsRequest();
-    return response.data; // supondo que o objeto de dados seja retornado em response.data
+
+    return response.data;
+  };
+
+  const getCollaborators = async () => {
+    const response = await getProjectCollaboratorsRequest();
+
+    return response.data;
   };
 
   useEffect(() => {
     const fetchData = async () => {
       const projectData = await getProjects();
+      const collaboratorData = await getCollaborators();
+
       setProjects(projectData);
+      setCollaborators(collaboratorData);
     };
 
     fetchData();
@@ -34,7 +45,7 @@ export default function Projects() {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 360,
+    width: 800,
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
@@ -43,38 +54,30 @@ export default function Projects() {
 
   return (
     <Grid container width={600} gap={4}>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2" color="text.secondary">
-            Juntar-se ao projeto.
-          </Typography>
-          <Typography id="modal-modal-description" mt={2} color="text.secondary">
-            Enviar solicitação ao dono para participar desse projeto?
-          </Typography>
-
-          <Box display="flex" justifyContent="space-between" mt={5}>
-            <Button size="small" variant="outlined" color="success" onClick={() => handleOpen()}>Sim, quero fazer parte</Button>
-            <Button size="small" variant="outlined" color="error" onClick={() => handleClose()}>Voltar</Button>
-          </Box>
-        </Box>
-      </Modal>
       <Box>
         <Typography color="text.secondary" variant="h6" component="h1">
-          TALVEZ VOCÊ SE INTERESSE POR ESSES
-        </Typography>
-        <Typography color="text.secondary" variant="body2" component="h2">
-          Esse é seu feed de projetos, aqui você pode encontrar projetos que talvez você se interesse em participar.
+          Esses são todos os projetos que você é dono ou faz parte.
         </Typography>
       </Box>
 
       {
         projects.map((project) => (
           <Grid key={project.id} item xs={12}>
+            <Modal
+              open={open}
+              onClose={handleClose}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
+            >
+              <Box sx={style}>
+                <Typography id="modal-modal-title" variant="h6" component="h2" color="text.secondary">
+                  {project.name}
+                </Typography>
+                <Typography id="modal-modal-description" mt={2} color="text.secondary">
+                  {project.description}
+                </Typography>
+              </Box>
+            </Modal>
             <CardCustom>
               <CardMedia
                 sx={{ height: 300 }}
@@ -104,8 +107,7 @@ export default function Projects() {
               </CardContent>
               <CardActionsCustom>
                 <Box display="flex" gap={1.5}>
-                  <Button size="small" variant="outlined" color="secondary" onClick={() => handleOpen()}>Juntar-se</Button>
-                  <Button size="small" color="secondary">Ler mais</Button>
+                  <Button size="small" variant="outlined" color="secondary" onClick={() => handleOpen()}>Detalhes</Button>
                 </Box>
                 <Box>
                   {
