@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import Toast from 'src/components/Toast';
-import { setSessionToken } from 'src/helpers/session';
+import { setSessionName, setSessionToken } from 'src/helpers/session';
 import { authenticationUserFormSchema } from 'src/helpers/validations';
 import { loginRequest } from 'src/services/requests';
 
@@ -29,7 +29,9 @@ export default function Login() {
     if (response.status === 200) {
       setLoading(false);
       setSessionToken(response.data.token);
+      setSessionName(data.identifier);
       navigate('/feed');
+      window.location.reload();
     } else {
       setLoading(false);
       setMessage('Usuário ou senha incorretos.');

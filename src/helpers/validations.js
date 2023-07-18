@@ -18,3 +18,10 @@ export const createAccountFormSchema = z.object({
     path: ['confirm'],
   }),
 });
+
+export const createProjectFormSchema = z.object({
+  name: z.string().nonempty('Escolha um nome para o seu projeto.'),
+  description: z.string().nonempty('É necessário uma descrição para o seu projeto.'),
+  githubUrl: z.string(),
+  discordUrl: z.string(),
+});
