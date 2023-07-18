@@ -1,9 +1,9 @@
 import { DoorBack } from '@mui/icons-material';
 import {
-  Box, Drawer, Toolbar, List, Divider, ListItem, ListItemButton, ListItemIcon, ListItemText,
+  Box, Drawer, List, Divider, ListItem, ListItemButton, ListItemIcon, ListItemText,
 } from '@mui/material';
 import React from 'react';
-import { closeSession } from 'src/helpers/session';
+import { closeSession, getSessionName } from 'src/helpers/session';
 
 const drawerWidth = 240;
 
@@ -22,15 +22,28 @@ export default function SideMenu() {
         variant="permanent"
         anchor="right"
       >
-        <Toolbar />
         <Divider />
         <List>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <img
+                  src="https://www.gravatar.com/avatar/?d=identicon"
+                  width="24"
+                  height="24"
+                  alt="avatar"
+                  style={{ borderRadius: '50%' }}
+                />
+              </ListItemIcon>
+              <ListItemText primary={getSessionName()} />
+            </ListItemButton>
+          </ListItem>
           <ListItem disablePadding>
             <ListItemButton onClick={() => closeSession()}>
               <ListItemIcon>
                 <DoorBack />
               </ListItemIcon>
-              <ListItemText primary="sair" />
+              <ListItemText primary="Sair" />
             </ListItemButton>
           </ListItem>
         </List>
